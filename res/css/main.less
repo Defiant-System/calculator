@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:200&display=swap');
+
+content {
+	background: #474545;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 23px 1px 1px;
+	font-family: 'Nunito', sans-serif;
+	.select(none);
+
+	&.extended {
+		.scientific {
+			display: block;
+
+			.button {
+				padding-top: 16px;
+				font-size: 17px;
+
+				sup {
+					font-size: 12px;
+					position: relative;
+					top: -5px;
+					left: 2px;
+				}
+				sub {
+					font-size: 12px;
+					position: relative;
+					top: 5px;
+					left: 1px;
+				}
+			}
+		}
+		.basic {
+			.button {
+				&.zero {
+					border-radius: 0;
+				}
+			}
+		}
+	}
+
+	.display {
+		//background: rgba(255,255,255,0.2);
+		color: #fff;
+		height: 63px;
+		padding: 11px 3px 0;
+		text-align: right;
+		font-size: 39px;
+		font-weight: 200;
+		border-bottom: 1px solid #474545;
+	}
+
+	.scientific {
+		float: left;
+		width: 360px;
+		display: none;
+
+		.button {
+			background: #5d5b5b;
+		}
+	}
+
+	.basic {
+		.button {
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3) {
+				background: #5d5b5b;
+				padding-top: 16px;
+				font-size: 19px;
+
+				&:active {
+					background: #6d6b6b;
+				}
+			}
+
+			&.zero {
+				width: 120px;
+				border-radius: 0 0 0 4px;
+			}
+
+			&:last-child {
+				border-radius: 0 0 4px 0;
+			}
+
+			&:nth-child(4n),
+			&:last-child {
+				background: #fd9e2b;
+				border-right: 0;
+				padding-top: 11px;
+				font-size: 27px;
+
+				&:active {
+					background: #dd8416;
+				}
+			}
+		}
+	}
+
+	.button {
+		background: #777575;
+		color: #fff;
+		float: left;
+		width: 60px;
+		height: 48px;
+		padding-top: 12px;
+		text-align: center;
+		font-size: 23px;
+		font-weight: 200;
+		border-right: 1px solid #474545;
+		border-bottom: 1px solid #474545;
+
+		&.down {
+			.animation(down 150ms);
+		}
+
+		&:active {
+			background: #888585;
+		}
+
+		&[data-click="plus-minus"] {
+			padding-top: 14px;
+
+			sup {
+				font-size: 15px;
+				position: relative;
+				top: -4px;
+				left: 0px;
+
+				&:after {
+					content: '';
+					background: #fff;
+					position: absolute;
+					top: 6px;
+					right: -3px;
+					width: 1px;
+					height: 17px;
+					.rotate(35deg);
+				}
+			}
+
+			sub {
+				font-size: 15px;
+				position: relative;
+				bottom: -3px;
+				left: 1px;
+			}
+		}
+	}
+
+	.keyframes(down; {
+		0%   { opacity: 0.5; }
+		100% { opacity: 1; }
+	});
+}
