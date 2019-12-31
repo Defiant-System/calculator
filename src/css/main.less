@@ -8,7 +8,7 @@ content {
 	height: 100%;
 	padding: 23px 1px 1px;
 	font-family: 'Nunito', sans-serif;
-	.select(none);
+	user-select: none;
 
 	&.extended {
 		.scientific {
@@ -113,7 +113,7 @@ content {
 		border-bottom: 1px solid #474545;
 
 		&.down {
-			.animation(down 150ms);
+			animation: down 150ms;
 		}
 
 		&:active {
@@ -137,7 +137,7 @@ content {
 					right: -3px;
 					width: 1px;
 					height: 17px;
-					.rotate(35deg);
+					transform: rotate(35deg);
 				}
 			}
 
@@ -150,8 +150,8 @@ content {
 		}
 	}
 
-	.keyframes(down; {
+	@keyframes down {
 		0%   { opacity: 0.5; }
 		100% { opacity: 1; }
-	});
+	}
 }
