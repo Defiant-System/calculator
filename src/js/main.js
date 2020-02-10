@@ -31,7 +31,7 @@ const calculator = {
 				window.width = 602;
 				this.body.addClass("extended");
 				return false;
-			case "keystroke":
+			case "window.keystroke":
 				if (event.char.match(/\d/) !== null) {
 					el = window.find(`.button[data-click="${event.char}"]`).addClass("down");
 
