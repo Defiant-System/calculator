@@ -1,6 +1,6 @@
 <MenuBar>
 	<Menu name="Calculator">
-		<Menu name="About Calculator" hotkey="meta+a"/>
+		<Menu name="About Calculator" shell="win -a"/>
 		<Menu type="divider"/>
 		<Menu name="Preferences" hotkey="shift+," click="preferences"/>
 		<Menu type="divider"/>
