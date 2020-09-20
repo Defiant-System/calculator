@@ -9,10 +9,6 @@
 			<Menu name="Close"/>
 		</Menu>
 		<Menu type="divider"/>
-		<Menu name="Hide Calculator"/>
-		<Menu name="Hide Others"/>
-		<Menu name="Show All" disabled="1"/>
-		<Menu type="divider"/>
 		<Menu name="Quit Calculator" shell="win -c"/>
 	</Menu>
 	<Menu name="View">
