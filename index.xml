@@ -4,6 +4,7 @@
 		<meta name="title" value="Calculator" version="1.0"/>
 		<meta name="author" value="Hakan Bilgin" namespace="ant"/>
 		<meta name="license" value="AGPL-3.0-or-later"/>
+		<meta name="repository" value="https://github.com/Defiant-System/calculator"/>
 		<meta name="width" value="242"/>
 		<meta name="height" value="326"/>
 		<meta name="top" value="70"/>
@@ -14,7 +15,6 @@
 		<meta name="resize" value="disabled"/>
 		<meta name="script" value="src/js/main.js"/>
 		<meta name="style" value="src/css/main.less"/>
-		<meta name="appIcon" value="src/svg/icon.svg"/>
 		<meta name="content" value="src/partials/content.htm"/>
 
 		@import "src/partials/menubar.xml"
